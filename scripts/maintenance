@@ -6,7 +6,7 @@ VERT='\033[0;32m'
 JAUNE='\033[1;33m'
 NC='\033[0m'
 
-echo -e "${VERT}=== Maintenance Archsplatts ===${NC}"
+echo -e "${VERT}=== Script de maintenance Void Linux ===${NC}"
 echo
 
 echo -e "${JAUNE}>>> Recherche de mises à jour Void...${NC}"
