@@ -1,0 +1,20 @@
+#!/bin/bash
+
+OPTIONS="\n\n\n󰍃"
+
+CHOSEN=$(echo -e "$OPTIONS" | rofi -dmenu -p "Power Menu" -theme "$HOME/.config/rofi/powermenu.rasi")
+
+case "$CHOSEN" in
+    "")
+        loginctl poweroff
+        ;;
+    "")
+        loginctl reboot
+        ;;
+	"")
+		swaylock -f
+		;;
+    "󰍃")
+        xfce4-session-logout --logout
+        ;;
+esac

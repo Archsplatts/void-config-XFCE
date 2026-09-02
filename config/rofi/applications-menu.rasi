@@ -1,0 +1,109 @@
+@theme "catppuccin-default"
+
+* {
+    background-color:	transparent;
+	margin:     		0px;
+    padding:    		0px;
+    spacing:    		0px;  
+    text-color:        	@text;
+}
+
+configuration {
+	display-drun: 			" ";
+	display-run:			" ";
+	disable-history:     	true;	  
+	drun-display-format:	"{name}";
+    font:   				"UbuntuNerd Font 13";
+ 	icon-theme:          	"Papirus-Dark";
+	modi: 					"drun,run";
+	scroll-method:       	0;  
+	show-icons:          	true;
+	sidebar-mode:        	false;
+}
+
+window {
+	background-color:  	rgba(30,30,46,0.90);
+	border:           	3px;
+	border-color:		@teal;
+    border-radius:  	8px;
+	padding:          	14px;
+	transparency:		"real";
+    width:          	450;  
+}
+
+mainbox {
+    padding:    14px;
+}
+
+inputbar {
+    background-color:  	@base;
+    border-radius:  	8px;
+	children:   		[ prompt, entry ];
+	padding:    		8px 16px;
+    spacing:    		8px;   
+}
+
+prompt {
+    text-color: #cdd6f4;
+}
+
+entry {
+    placeholder:        "Rechercher...";
+    placeholder-color:	 @overlay0;
+}
+
+message {
+ 	background-color:   @surface1; 
+	border-color:       @surface1;
+    border-radius:      16px;
+ 	margin:             12px 0 0; 
+}
+
+textbox {
+    padding:    8px 24px;
+    text-color:	@text;
+}
+
+listview {
+    background-color:   transparent;
+	border: 			0;  
+	columns:    		1;
+	fixed-height: 		false; 
+	lines:      		6;
+    margin:     		12px 0 0;
+	padding:  			2px 0px 0px;  
+	scrollbar:    		false; 
+    spacing:  			8px;    
+}
+
+element {
+	background-color: inherit; 
+	border-radius:  16px;
+    padding:        8px 16px;
+    spacing:        8px;   
+}
+
+element selected normal, element selected active {
+	background-color:	inherit;
+    text-color:			@teal;
+}
+
+element-icon {
+    size:           28px;
+    vertical-align: 0.5;
+}
+
+element-text {
+	background-color:	inherit;
+    text-color: inherit;
+}
+
+element normal normal {
+    background-color:	transparent;
+    text-color: 		@text;
+}
+
+element alternate normal {
+    background-color:	transparent;
+    text-color:			@text;
+}

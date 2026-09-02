@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Xmirror
+Comment=Choisir un miroir
+Exec=/home/$USER/.scripts/xmirror
+Icon=xsi-software-update-available-symbolic
+Type=Application
+Categories=System

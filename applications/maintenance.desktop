@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Maintenance
+Icon=preferences-system-services
+Exec=/home/$USER/.scripts/maintenance-launch
+Categories=System
+Comment=Script de maintenance Void

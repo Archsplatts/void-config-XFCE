@@ -1,0 +1,61 @@
+@import "themes/catppuccin-default"
+
+configuration {
+    font: "UbuntuNerd Font 38";  
+}
+
+window {
+	background-color: 	rgba(30,30,46,0.90); 
+	border:           	3px; 
+	border-color:     	@teal;
+	border-radius:	  	8px;
+	padding: 			20px;
+	transparency:       "real";
+    width:            	340px;              
+}
+
+mainbox {
+    enabled:                     true;
+    border-color:                @selected;
+    background-color:            transparent;
+    children:                    [ "listview" ];
+}
+
+listview {
+	border: 	0; 
+	columns:  	4;
+	flow: 		horizontal;
+    lines:    	1;
+	scrollbar:	false;  
+}
+
+inputbar {
+    enabled: false;
+}   
+
+element {
+	padding:5;	
+}
+
+element selected normal, element selected active {  
+   	background-color:	inherit;
+    border-radius: 		8px;
+    padding: 			10px;
+    text-color:        	@teal;
+}
+
+element normal normal {
+    background-color:	transparent;
+    text-color: 		@text;
+}
+
+element alternate normal {
+    background-color:	transparent;
+    text-color:			@text;
+}
+
+element-text {
+    horizontal-align: 	0.3;
+    background-color:	inherit;
+    text-color: 		inherit;
+}

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Mise à jour
+Comment=Mise à jour système
+Exec=/home/$USER/.scripts/update
+Icon=update-notifier
+Categories=System
