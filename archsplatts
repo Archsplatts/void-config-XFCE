@@ -78,6 +78,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"ufw"
 		"unzip"
 		"vulkan-loader"
+		"xarchiver"
 		"xfce4-screenshooter"
 		"xfce4-whiskermenu-plugin"
 		"xmirror"
