@@ -88,7 +88,7 @@ IPv4	9.9.9.9, 149.112.112.112
 IPv6	2620:fe::fe, 2620:fe::9
 
 ## Raccourcis clavier
-/home/laurence/.scripts/maintenance-launch						Super+M
+/home/$USER/.scripts/maintenance-launch						Super+M
 alacritty														Super+Entrée
 alacritty -e btop												Super+Echap
 alacritty -e sh -c "bat $HOME/Infos/commandes; \$SHELL"			Super+H
