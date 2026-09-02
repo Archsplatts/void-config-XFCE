@@ -1,2 +1,2 @@
 #!/bin/bash
-alacritty -e bash -c "/home/$USER/.config/mango/scripts/maintenance; \$SHELL"   
+alacritty -e bash -c "/home/$USER/.scripts/maintenance; \$SHELL"   
