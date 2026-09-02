@@ -57,6 +57,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"noto-fonts-cjk"
 		"noto-fonts-emoji"
 		"noto-fonts-ttf"
+		"numlockx"
 		"octoxbps"
 	    "papirus-folders"
 		"papirus-icon-theme"
