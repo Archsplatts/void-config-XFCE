@@ -36,6 +36,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"alacritty"
 		"bat"
 		"btop"
+		"cronie"
 		"cups"
 		"dust"
 		"epson-inkjet-printer-escpr"
@@ -43,7 +44,6 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"fastfetch"
 		"flatpak"
 		"galculator"
-		"git"
 		"gnome-calendar"
 		"gnome-disk-utility"
 		"impression"
@@ -107,6 +107,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 
 chsh -s /bin/zsh
 sudo ln -s /etc/sv/cupsd /var/service/
+sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/nanoklogd /var/service
 sudo ln -s /etc/sv/socklog-unix /var/service
 sudo ln -s /etc/sv/ufw /var/service/
