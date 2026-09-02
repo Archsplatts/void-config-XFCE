@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Link
 URL=https://flathub.org
-Icon=applications-vnd.flatpak
+Icon=application-vnd.flatpak
 Name=Flathub
 Categories=Network
 Comment=Installer des flatpak
