@@ -104,7 +104,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[4/6] Shell & services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/nanoklogd /var/service
 sudo ln -s /etc/sv/socklog-unix /var/service
