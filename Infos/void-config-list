@@ -58,7 +58,7 @@ HOSTNAME="void"
 HARDWARECLOCK="UTC"
 TIMEZONE="Europe/Paris"
 KEYMAP=fr
-#FONT="ter-132n"
+FONT="ter-124b"
 
 
 [/etc/sddm.conf]
