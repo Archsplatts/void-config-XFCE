@@ -1,0 +1,20 @@
+##   
+
+Discord			com.discordapp.Discord 
+
+Heroic			com.heroicgameslauncher.hgl
+
+Mangohud		runtime/com.valvesoftware.Steam.Utility.MangoHud/x86_64/stable
+
+Proton-GE		com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+
+ProtonUp-Qt		net.davidotek.pupgui2
+
+Steam			com.valvesoftware.Steam 
+
+
+## Mangohud (activation globale)
+
+flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam   
+
+flatpak override --user --unset-env=MANGOHUD com.valvesoftware.Steam   
