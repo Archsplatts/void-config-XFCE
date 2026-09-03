@@ -17,10 +17,6 @@ echo -e "${JAUNE}>>> Recherche de mises à jour flatpak...${NC}"
 flatpak update || echo "Aucun flatpak à mettre à jour."
 echo
 
-echo -e "${JAUNE}>>> Nettoyage des paquets orphelins et du cache...${NC}"
-sudo xbps-remove -oO
-echo
-
 echo -e "${JAUNE}>>> Vérification des services à redémarrer...${NC}"
 xcheckrestart
 echo
