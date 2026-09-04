@@ -18,3 +18,7 @@ Steam			com.valvesoftware.Steam
 flatpak override --user --env=MANGOHUD=1 com.valvesoftware.Steam   
 
 flatpak override --user --unset-env=MANGOHUD com.valvesoftware.Steam   
+
+# Autoriser l'accès à .local/share/themes
+
+flatpak --user override --filesystem=xdg-data/themes:ro com.brave.Browser
