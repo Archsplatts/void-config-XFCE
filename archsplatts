@@ -39,7 +39,6 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"cronie"
 		"cups"
 		"dust"
-		"epson-inkjet-printer-escpr"
 		"eza"
 		"fastfetch"
 		"flatpak"
