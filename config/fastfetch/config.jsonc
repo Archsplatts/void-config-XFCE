@@ -74,7 +74,7 @@
 		    "type": "terminal",
 		    "key": "├─ ",
 		    "keyColor": "blue",
-		    "format": "Foot"
+		    "format": "Alacritty"
 		},
 		{
 		    "type": "custom",
@@ -86,7 +86,7 @@
 		    "type": "wm",
 		    "key": "╰─ ",
 		    "keyColor": "blue",
-		    "format": "Mango"
+		    "format": "XFCE"
 		},
 		{
 		  "type": "custom",
