@@ -47,7 +47,6 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"gnome-disk-utility"
 		"impression"
 		"kvantum"
-		"lightdm-gtk-greeter-settings"
 		"lollypop"
 		"menulibre"
 		"mesa-vulkan-radeon"
