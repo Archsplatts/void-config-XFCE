@@ -49,6 +49,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"kvantum"
 		"lollypop"
 		"menulibre"
+		"mesa-vaapi"
 		"mesa-vulkan-radeon"
 		"micro"
 		"mugshot"
