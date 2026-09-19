@@ -19,6 +19,9 @@ configuration {
 	scroll-method:       	0;  
 	show-icons:          	true;
 	sidebar-mode:        	false;
+	hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
 }
 
 window {
