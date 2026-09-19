@@ -11,6 +11,9 @@ configuration {
 	drun-display-format:        "{name}";
 	font: "UbuntuNerd Font Regular 12";
 	icon-theme:					"Papirus-Dark";
+	hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
 }
 
 window {
