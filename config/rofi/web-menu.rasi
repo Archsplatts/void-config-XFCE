@@ -1,7 +1,10 @@
 @import "themes/catppuccin-default"
 
 configuration {
-    font: "UbuntuNerd Font 14";  
+    font: "UbuntuNerd Font 14";
+	hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
 }
 
 window {
