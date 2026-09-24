@@ -12,6 +12,8 @@ ProtonUp-Qt		net.davidotek.pupgui2
 
 Steam			com.valvesoftware.Steam 
 
+## Ajouter le dépôt flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 ## Mangohud (activation globale)
 
