@@ -1,2 +1,2 @@
-#!/bin/bash
-alacritty -e bash -c "sudo xbps-install -Su; \$SHELL"
+#!/bin/sh
+xfce4-terminal -x sh -c "sudo xbps-install -Su; \$SHELL"
