@@ -32,8 +32,6 @@ echo -e "${JAUNE}[2/6] Installation des paquets${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 	PKGS=(
-		"LACT"
-		"alacritty"
 		"bat"
 		"btop"
 		"cronie"
