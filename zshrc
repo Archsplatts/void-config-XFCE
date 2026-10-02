@@ -12,9 +12,9 @@ alias fps="flatpak search"
 alias fpu="flatpak update"
 
 ##   Système
-alias svlist="ls /var/service"
-alias vkpl="vkpurge list"
-alias vkpr="sudo vkpurge rm all"
+alias ls="eza --icons -1 --group-directories-first"
+alias rm="trash -v"
+alias svl="ls /var/service"
 
 ##   Utilitaires
 alias c="clear"
@@ -22,10 +22,8 @@ alias cdt="cd $HOME/Téléchargements"
 alias conf="yazi .config"
 alias ff="fastfetch"
 alias fm="yazi"
-alias ls="eza --icons -1 --group-directories-first"
 alias pfc="papirus-folders -C"
 alias pfl="papirus-folders -l"
-alias rm="trash -v"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
 ##   XBPS
