@@ -1,4 +1,4 @@
 [opener]
 edit = [
-	{ run = 'micro "$@"', block = true, for = "unix" },
+	{ run = 'micro "%s"', block = true, for = "unix" },
 ]   
