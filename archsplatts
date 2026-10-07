@@ -120,7 +120,9 @@ mkdir -p $HOME/.local/share/applications
 mkdir -p $HOME/.local/share/icons
 mkdir -p $HOME/.local/share/fonts
 mkdir -p $HOME/.local/share/themes
+mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes
 mkdir -p $HOME/.scripts
+cp $HOME/void-config-XFCE/catppuccin-mocha.theme $HOME/.local/share/xfce4/terminal/colorschemes/
 cp -r $HOME/void-config-XFCE/config/* $HOME/.config
 cp -r $HOME/void-config-XFCE/applications/* $HOME/.local/share/applications
 cp -r $HOME/void-config-XFCE/scripts/* $HOME/.scripts
