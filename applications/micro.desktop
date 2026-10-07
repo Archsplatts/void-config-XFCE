@@ -2,7 +2,7 @@
 
 Name=Micro
 GenericName=Text Editor
-Comment=Edit text files in a terminal
+Comment=Editer des fichiers texte
 
 Icon=micro
 Type=Application
