@@ -112,6 +112,10 @@ sudo ln -s /etc/sv/socklog-unix /var/service
 sudo ln -s /etc/sv/ufw /var/service/
 sudo ufw enable
 
+sudo rm /var/service/agetty-tty4
+sudo rm /var/service/agetty-tty5
+sudo rm /var/service/agetty-tty6
+
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[5/6] Copie des dotfiles${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
