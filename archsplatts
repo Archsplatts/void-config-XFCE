@@ -105,11 +105,11 @@ echo -e "${JAUNE}[4/6] Shell & services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 sudo chsh -s /bin/zsh $USER
-sudo ln -s /etc/sv/cupsd /var/service/
-sudo ln -s /etc/sv/cronie /var/service/
-sudo ln -s /etc/sv/nanoklogd /var/service
-sudo ln -s /etc/sv/socklog-unix /var/service
-sudo ln -s /etc/sv/ufw /var/service/
+sudo ln -sf /etc/sv/cupsd /var/service/
+sudo ln -sf /etc/sv/cronie /var/service/
+sudo ln -sf /etc/sv/nanoklogd /var/service
+sudo ln -sf /etc/sv/socklog-unix /var/service
+sudo ln -sf /etc/sv/ufw /var/service/
 sudo ufw enable
 
 sudo rm /var/service/agetty-tty4
