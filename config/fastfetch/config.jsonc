@@ -74,7 +74,7 @@
 		    "type": "terminal",
 		    "key": "├─ ",
 		    "keyColor": "blue",
-		    "format": "Alacritty"
+		    "format": "xfce4-terminal"
 		},
 		{
 		    "type": "custom",
