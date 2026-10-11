@@ -1,41 +1,33 @@
 #!/bin/bash
 
-options="ArchWiki\0icon\x1farchlinux
-BraveSearch\0icon\x1fbrave
-Korben\0icon\x1fkorben
-MangoDocs\0icon\x1fmango
-Movix\0icon\x1fcom.github.artemanufrij.playmyvideos
-ProtonDB\0icon\x1fprotondb
-Twitch\0icon\x1ftwitch
+options="Ask Brave\0icon\x1fbrave
+Films\0icon\x1fphotofilmstrip
+Flathub\0icon\x1fapplication-vnd.flatpak
+Handbook\0icon\x1fvoid-logo-notext
+ProtonDB\0icon\x1fdistributor-logo-steamos
 Youtube\0icon\x1fyoutube"
 
 selection=$(echo -e "$options" | rofi -dmenu -show-icons -icon-theme "Papirus" -config ~/.config/rofi/web-menu.rasi)
 
 if [[ -n "$selection" ]]; then
     case "$selection" in
-		"ArchWiki")
-   			brave-origin https://wiki.archlinux.org/title/Main_page
+   		"Ask Brave")
+   		   	flatpak run com.brave.Browser https://search.brave.com/ask
+   		   	;;  
+		"Films")
+			flatpak run com.brave.Browser https://movix.bet
+			;;
+		"Flathub")
+			flatpak run com.brave.Browser https://flathub.org
+			;;
+		"Handbook")
+   			flatpak run com.brave.Browser https://docs.voidlinux.org/
    			;;
-   		"BraveSearch")
-   		   	brave-origin https://search.brave.com 
-   		   	 ;;  
-  		"Korben")
-  			brave-origin https://korben.info
-  			;;          
-		"MangoDocs")
-			brave-origin https://mangowm.github.io/docs
-			;;
-		"Movix")
-			brave-origin https://movix.bet
-			;;
         "ProtonDB")
-            brave-origin https://www.protondb.com
-            ;;
-		"Twitch")
-			firefox https://www.twitch.tv/eloetcraquotte
+            flatpak run com.brave.Browser https://www.protondb.com
             ;;
         "Youtube")                    
-            brave-origin https://www.youtube.com
-             ;; 
+            flatpak run com.brave.Browser https://www.youtube.com
+            ;; 
     esac
 fi   
