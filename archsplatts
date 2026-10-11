@@ -39,6 +39,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"dust"
 		"eza"
 		"fastfetch"
+		"feh"
 		"flatpak"
 		"galculator"
 		"gnome-calendar"
