@@ -43,6 +43,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"galculator"
 		"gnome-calendar"
 		"gnome-disk-utility"
+		"i3"
 		"impression"
 		"kvantum"
 		"lightdm-gtk-greeter-settings"
