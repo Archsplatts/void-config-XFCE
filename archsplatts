@@ -22,16 +22,17 @@ if [ -t 0 ]; then
 fi  
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[1/6] Mise à jour de Void${NC}"
+echo -e "${JAUNE}[1/5] Mise à jour de Void${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 sudo xbps-install -Syu
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[2/6] Installation des paquets${NC}"
+echo -e "${JAUNE}[2/5] Installation des paquets${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 	PKGS=(
+		"autotiling"
 		"bat"
 		"btop"
 		"cronie"
@@ -97,13 +98,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 sudo xbps-install -Sy "${PKGS[@]}"
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[3/6] Ajout du dépôt Flathub${NC}"
-echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
-
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[4/6] Shell & services${NC}"
+echo -e "${JAUNE}[3/5] Shell & services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 sudo chsh -s /bin/zsh $USER
@@ -119,7 +114,7 @@ sudo rm /var/service/agetty-tty5
 sudo rm /var/service/agetty-tty6
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[5/6] Copie des dotfiles${NC}"
+echo -e "${JAUNE}[4/5] Copie des dotfiles${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 mkdir -p $HOME/.local/share/applications
@@ -139,7 +134,7 @@ cp $HOME/void-config-XFCE/zshrc $HOME/.zshrc
 chmod u+x $HOME/.scripts/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[6/6] Catppuccin papirus folders${NC}"
+echo -e "${JAUNE}[5/5] Catppuccin papirus folders${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 git clone https://github.com/catppuccin/papirus-folders.git
