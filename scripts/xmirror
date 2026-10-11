@@ -1,2 +1,2 @@
 #!/bin/sh
-xfce4-terminal -x sh -c "sudo xmirror; \$SHELL"
+xfce4-terminal -x sh -c "sudo xmirror;\$SHELL"
