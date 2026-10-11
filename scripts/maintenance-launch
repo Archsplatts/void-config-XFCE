@@ -1,2 +1,2 @@
 #!/bin/bash
-alacritty -e bash -c "/home/$USER/.scripts/maintenance; \$SHELL"   
+xfce4-terminal -x sh -c "/home/$USER/.scripts/maintenance;\$SHELL"   
