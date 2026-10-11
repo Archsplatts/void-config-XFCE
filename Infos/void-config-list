@@ -14,6 +14,7 @@ vkpurge rm all || true
 sudo chmod u+x /etc/cron.weekly/fstrim
 sudo chmod u+x /etc/cron.weekly/maintenance
 
+---
 
 [/etc/default/grub]
 
@@ -25,12 +26,18 @@ GRUB_BACKGROUND=/usr/share/void-artwork/018.png
 
 sudo update-grub
 
+---
 
 [/etc/modules-load.d/]
 
 # ntsync.conf
 ntsync
 
+# steam limits
+/etc/security/limits.d/26-steam-nofile.conf
+*               hard    nofile             524288
+
+---
 
 [/etc/sv/]
 
@@ -54,6 +61,7 @@ sudo ln -s /etc/sv/lact /var/service/
 # Vérifier
 sudo sv status /var/service/lact
 
+---
 
 [/etc/rc.conf]
 
@@ -63,6 +71,7 @@ TIMEZONE="Europe/Paris"
 KEYMAP=fr
 FONT="ter-124b"
 
+---
 
 [$HOME]
 
@@ -70,6 +79,7 @@ FONT="ter-124b"
 .local/share/icons/ --> Bibata-Modern-Ice
 .local/share/themes --> Catppuccin-Mocha-Teal
 
+---
 
 [XFCE]
 
