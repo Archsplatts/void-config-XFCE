@@ -139,7 +139,7 @@ element alternate.normal {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        72px;
+    size:                        96px;
     cursor:                      inherit;
 }
 element-text {
