@@ -14,6 +14,7 @@ vkpurge rm all || true
 sudo chmod u+x /etc/cron.weekly/fstrim
 sudo chmod u+x /etc/cron.weekly/maintenance
 
+
 [/etc/default/grub]
 
 GRUB_DEFAULT=0
@@ -62,11 +63,13 @@ TIMEZONE="Europe/Paris"
 KEYMAP=fr
 FONT="ter-124b"
 
+
 [$HOME]
 
 .local/share/fonts --> ubuntumono ubuntu nerd font
 .local/share/icons/ --> Bibata-Modern-Ice
 .local/share/themes --> Catppuccin-Mocha-Teal
+
 
 [XFCE]
 
