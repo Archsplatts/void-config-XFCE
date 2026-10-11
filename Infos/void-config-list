@@ -11,6 +11,8 @@ fstrim /
 xbps-remove -yO || true
 vkpurge rm all || true 
 
+sudo chmod u+x /etc/cron.weekly/fstrim
+sudo chmod u+x /etc/cron.weekly/maintenance
 
 [/etc/default/grub]
 
