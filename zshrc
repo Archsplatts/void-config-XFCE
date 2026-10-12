@@ -19,6 +19,7 @@ alias svl="ls /var/service"
 ##   Utilitaires
 alias c="clear"
 alias cdt="cd $HOME/Téléchargements"
+alias class="xprop | grep WM_CLASS"
 alias conf="yazi .config"
 alias ff="fastfetch"
 alias fm="yazi"
