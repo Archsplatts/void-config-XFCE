@@ -67,6 +67,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 		"qt6ct"
 		"redshift-gtk"
 		"rofi"
+		"rtkit"
 		"simple-scan"
 		"spectrwm"
 		"starship"
