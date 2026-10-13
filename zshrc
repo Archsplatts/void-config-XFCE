@@ -2,7 +2,7 @@ export BAT_THEME="Catppuccin Mocha"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
 
-##   Flatpak
+#   FLATPAK
 alias fpi="flatpak install"
 alias fpd="flatpak uninstall --delete-data"
 alias fpl="flatpak list"
@@ -11,12 +11,12 @@ alias fpo="flatpak uninstall --unused"
 alias fps="flatpak search"
 alias fpu="flatpak update"
 
-##   Système
+#   SYSTEM
 alias ls="eza --icons -1 --group-directories-first"
 alias rm="trash -v"
 alias svl="ls /var/service"
 
-##   Utilitaires
+#   UTILS
 alias c="clear"
 alias cdt="cd $HOME/Téléchargements"
 alias class="xprop | grep WM_CLASS"
@@ -27,7 +27,7 @@ alias pfc="papirus-folders -C"
 alias pfl="papirus-folders -l"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
-##   XBPS
+#   XBPS
 alias add="sudo xbps-install -Sy"
 alias clean="sudo xbps-remove -oO"
 alias del="sudo xbps-remove -R"
