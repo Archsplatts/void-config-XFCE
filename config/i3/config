@@ -1,0 +1,28 @@
+#	    ▄▄▄▄▄  
+#	   ██▀▀▀██ 
+#	 ▀▀▀   ▄█▀ 
+#	 ██  ▀▀▀█▄ 
+#	 ██▄    ██ 
+#	▄██▀█████▀ 
+           
+           
+# VARIABLES
+set $mod Mod4
+set $term xfce4-terminal
+set $fm thunar
+set $menu rofi -show drun -config ~/.config/rofi/gnome-menu.rasi
+set $editor xfce4-terminal -x micro
+set $web firefox
+
+# WORKSPACES
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+
+# EXIT
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+include ~/.config/i3/config.d/*
+#
