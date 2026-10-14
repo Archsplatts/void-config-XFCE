@@ -32,7 +32,6 @@ echo -e "${JAUNE}[2/5] Installation des paquets${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
 	PKGS=(
-		"android-tools"
 		"bat"
 		"btop"
 		"cronie"
