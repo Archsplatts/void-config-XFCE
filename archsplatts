@@ -102,17 +102,17 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 echo -e "${JAUNE}[3/5] Shell & services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-sudo chsh -s /bin/zsh $USER
+chsh -s /bin/zsh
 sudo ln -sf /etc/sv/cupsd /var/service/
 sudo ln -sf /etc/sv/cronie /var/service/
-sudo ln -sf /etc/sv/nanoklogd /var/service
-sudo ln -sf /etc/sv/socklog-unix /var/service
+sudo ln -sf /etc/sv/nanoklogd /var/service/
+sudo ln -sf /etc/sv/socklog-unix /var/service/
 sudo ln -sf /etc/sv/ufw /var/service/
 sudo ufw enable
 
-sudo rm /var/service/agetty-tty4
-sudo rm /var/service/agetty-tty5
-sudo rm /var/service/agetty-tty6
+sudo rm -f /var/service/agetty-tty4
+sudo rm -f /var/service/agetty-tty5
+sudo rm -f /var/service/agetty-tty6
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[4/5] Copie des dotfiles${NC}"
