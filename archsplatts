@@ -129,8 +129,8 @@ cp -r $HOME/void-config-XFCE/config/* $HOME/.config
 cp -r $HOME/void-config-XFCE/applications/* $HOME/.local/share/applications
 cp -r $HOME/void-config-XFCE/scripts/* $HOME/.scripts
 cp $HOME/void-config-XFCE/sunken-tower.png $HOME/Images/
-sudo cp sunken-tower.png /usr/share/backgrounds
-sudo cp 018.png /usr/share/void-artwork/
+sudo cp $HOME/void-config-XFCE/sunken-tower.png /usr/share/backgrounds
+sudo cp $HOME/void-config-XFCE/018.png /usr/share/void-artwork/
 cp $HOME/void-config-XFCE/zshrc $HOME/.zshrc
 chmod u+x $HOME/.config/rofi/scripts/*
 chmod u+x $HOME/.scripts/*
