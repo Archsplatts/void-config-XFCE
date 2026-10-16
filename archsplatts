@@ -97,12 +97,12 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 	)
 
 sudo xbps-install -Sy "${PKGS[@]}"
+chsh -s /bin/zsh
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${JAUNE}[3/5] Shell & services${NC}"
+echo -e "${JAUNE}[3/5] Gestion des services${NC}"
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
 
-chsh -s /bin/zsh
 sudo ln -sf /etc/sv/cupsd /var/service/
 sudo ln -sf /etc/sv/cronie /var/service/
 sudo ln -sf /etc/sv/nanoklogd /var/service/
