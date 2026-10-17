@@ -39,7 +39,7 @@ element {
 }
 
 element selected normal, element selected active {  
-   	background-color:	@surface0;
+   	background-color:	@surface1;
     border-radius: 		8px;
     padding: 			10px;
     text-color:        	@teal;
