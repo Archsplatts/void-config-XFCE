@@ -9,7 +9,7 @@ window {
 	border:           	3px; 
 	border-color:     	@teal;
 	border-radius:	  	8px;
-	padding: 			20px;
+	padding: 			12px;
 	transparency:       "real";
     width:            	340px;              
 }
@@ -26,7 +26,8 @@ listview {
 	columns:  	4;
 	flow: 		horizontal;
     lines:    	1;
-	scrollbar:	false;  
+	scrollbar:	false; 
+	spacing:	8px;
 }
 
 inputbar {
@@ -34,23 +35,25 @@ inputbar {
 }   
 
 element {
-	padding:5;	
+	padding:5;
 }
 
 element selected normal, element selected active {  
-   	background-color:	inherit;
+   	background-color:	@surface0;
     border-radius: 		8px;
     padding: 			10px;
     text-color:        	@teal;
 }
 
 element normal normal {
-    background-color:	transparent;
+    background-color:	@surface0;
+	border-radius: 		8px;
     text-color: 		@text;
 }
 
 element alternate normal {
-    background-color:	transparent;
+    background-color:	@surface0;
+	border-radius: 		8px;
     text-color:			@text;
 }
 
