@@ -48,6 +48,12 @@ set $base #1e1e2e
 set $mantle #181825
 set $crust #11111b
 
+# RULES
+for_window [class="Galculator"] floating enable
+for_window [class="impression"] floating enable
+for_window [class="org.gnome.FileRoller"] floating enable
+for_window [class="pavucontrol"] floating enable
+
 # THEME
 # target                 title     bg    text   indicator  border
 client.focused           $teal     $base $text  $teal      $teal
