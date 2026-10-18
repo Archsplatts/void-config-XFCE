@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Mise à jour
-Comment=Mise à jour système
+Comment=sudo xbps-install -Syu
 Exec=/home/$USER/.scripts/update
 Icon=update-notifier
 Categories=System
