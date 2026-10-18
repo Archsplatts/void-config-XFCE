@@ -9,7 +9,7 @@ window {
 	border:           	3px; 
 	border-color:     	@teal;
 	border-radius:	  	8px;
-	padding: 			12px;
+	padding: 			8px;
 	transparency:       "real";
     width:            	340px;              
 }
