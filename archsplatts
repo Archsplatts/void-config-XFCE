@@ -124,10 +124,12 @@ mkdir -p $HOME/.local/share/fonts
 mkdir -p $HOME/.local/share/themes
 mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes
 mkdir -p $HOME/.scripts
+mkdir -p $HOME/Documents/Infos
 cp $HOME/void-config-XFCE/catppuccin-mocha.theme $HOME/.local/share/xfce4/terminal/colorschemes/
 cp -r $HOME/void-config-XFCE/config/* $HOME/.config
 cp -r $HOME/void-config-XFCE/applications/* $HOME/.local/share/applications
 cp -r $HOME/void-config-XFCE/scripts/* $HOME/.scripts
+cp -r $HOME/void-config-XFCE/Infos/* $HOME/Documents/Infos/
 cp $HOME/void-config-XFCE/sunken-tower.png $HOME/Images/
 sudo cp $HOME/void-config-XFCE/sunken-tower.png /usr/share/backgrounds
 sudo cp $HOME/void-config-XFCE/018.png /usr/share/void-artwork/
@@ -143,8 +145,7 @@ git clone https://github.com/catppuccin/papirus-folders.git
 cd papirus-folders
 sudo cp -r src/* /usr/share/icons/Papirus
 papirus-folders -C cat-mocha-teal
-cd ~
-rm -rf papirus-folders
+rm -rf $HOME/void-config-XFCE
 
 echo -e "${VERT}╔════════════════════════════════════════╗${NC}"
 echo -e "${VERT}║  Installation terminée avec succès !   ║${NC}"
