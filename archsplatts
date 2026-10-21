@@ -125,13 +125,14 @@ mkdir -p $HOME/.local/share/fonts
 mkdir -p $HOME/.local/share/themes
 mkdir -p $HOME/.local/share/xfce4/terminal/colorschemes
 mkdir -p $HOME/.scripts
+mkdir -p $HOME/Images/Wallpapers
 mkdir -p $HOME/Documents/Infos
 cp $HOME/void-config-XFCE/catppuccin-mocha.theme $HOME/.local/share/xfce4/terminal/colorschemes/
 cp -r $HOME/void-config-XFCE/config/* $HOME/.config
 cp -r $HOME/void-config-XFCE/applications/* $HOME/.local/share/applications
 cp -r $HOME/void-config-XFCE/scripts/* $HOME/.scripts
 cp -r $HOME/void-config-XFCE/Infos/* $HOME/Documents/Infos/
-cp $HOME/void-config-XFCE/sunken-tower.png $HOME/Images/
+cp $HOME/void-config-XFCE/sunken-tower.png $HOME/Images/Wallpapers/
 sudo cp $HOME/void-config-XFCE/sunken-tower.png /usr/share/backgrounds
 sudo cp $HOME/void-config-XFCE/018.png /usr/share/void-artwork/
 cp $HOME/void-config-XFCE/zshrc $HOME/.zshrc
