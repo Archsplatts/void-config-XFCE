@@ -61,6 +61,7 @@ echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━
 	    "papirus-folders"
 		"papirus-icon-theme"
 		"picom"
+		"poppler"
 		"qbittorrent"
 		"qt5-styleplugins"
 		"qt5ct"
