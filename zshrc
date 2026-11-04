@@ -12,7 +12,7 @@ alias fps="flatpak search"
 alias fpu="flatpak update"
 
 #   SYSTEM
-alias ls="eza --icons -1 --group-directories-first"
+alias ls="eza --icons --group-directories-first"
 alias rm="trash -v"
 alias svl="ls /var/service"
 
