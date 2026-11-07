@@ -1,6 +1,7 @@
 export BAT_THEME="Catppuccin Mocha"
 export EDITOR="micro"
 export MICRO_TRUECOLOR=1
+XDEB_PKGROOT=${HOME}/.config/xdeb
 
 #   FLATPAK
 alias fpi="flatpak install"
