@@ -1,0 +1,85 @@
+[/etc/default/grub]
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=0
+GRUB_TIMEOUT_STYLE="hidden"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 amdgpu.ppfeaturemask=0xffffffff quiet splash"
+GRUB_BACKGROUND=/usr/share/void-artwork/018.png
+
+sudo update-grub
+
+---
+
+[/etc/modules-load.d/]
+
+# ntsync.conf
+ntsync
+
+# steam limits
+/etc/security/limits.d/26-steam-nofile.conf
+*               hard    nofile             524288
+
+---
+
+[/etc/sv/]
+
+## LACT
+
+# Créer le service
+sudo mkdir -p /etc/sv/lact
+sudo micro /etc/sv/lact/run
+
+Insérer ceci :
+#!/bin/sh
+exec 2>&1
+exec chpst -u root lact daemon
+
+# Le rendre exécutable
+sudo chmod +x /etc/sv/lact/run
+
+# Activer le service au démarrage
+sudo ln -s /etc/sv/lact /var/service/
+
+# Vérifier
+sudo sv status /var/service/lact
+
+---
+
+[/etc/rc.conf]
+
+HOSTNAME="void"
+HARDWARECLOCK="UTC"
+TIMEZONE="Europe/Paris"
+KEYMAP=fr
+FONT="ter-124b"
+
+---
+
+[$HOME]
+
+.local/share/fonts --> ubuntumono ubuntu nerd font
+.local/share/icons/ --> Bibata-Modern-Ice
+.local/share/themes --> Catppuccin-Mocha-Teal
+
+---
+
+[XFCE]
+
+## Session et démarrage
+
+# Démarrage auto
+ajouter spectrwm
+
+# Session actuelle
+désactiver xfwm4 et xfdesktop (type de redémarrage : jamais)
+
+## Clavier/Raccourcis d'applications
+Supprimer tous les raccourcis clavier
+
+---
+
+## DNS (Auto adresses uniquement)
+IPv4	9.9.9.9, 149.112.112.112
+IPv6	2620:fe::fe, 2620:fe::9
+
+## Kvantum, qt5ct, qt6ct

@@ -1,0 +1,41 @@
+##  
+# sv up <services>
+# sv down <services>
+# sv restart <services>
+# sv status <services>
+
+# ln -s /etc/sv/<service> /var/service/
+# rm /var/service/<service>
+
+# Historique des installations
+xilog
+
+## 󱊞 
+sudo dd bs=4M if=/chemin/vers/fichier.iso of=/chemin/vers/usb status=progress && sync
+
+## 󰓓  
+gamemoderun MANGOHUD=1 %command%
+
+## 
+Liste de toutes les fenêtres ouvertes	
+alias window="mmsg get all-clients"
+
+Erreurs de config
+mango -p
+
+## 
+/var/log/socklog
+svlogtail
+
+## 󱛟
+sudo e2label /dev/sda2 <nouveau_nom>
+sudo e2fsck -fy /dev/sdX   
+
+## 
+ffmpeg -i album.ape album.flac
+yt-dlp -x --audio-format mp3 --audio-quality 0 "URL"
+
+## xdeb
+Copier le script dans /usr/local/bin/
+Convertir: xdeb -Sedf <paquet>.deb
+Installer: xbps-install -R ./binpkgs <nom>
