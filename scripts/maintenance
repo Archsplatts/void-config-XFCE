@@ -1,0 +1,5 @@
+#!/bin/sh
+xbps-remove -yO || true
+vkpurge rm all || true 
+#flatpak update -y 
+#flatpak uninstall --unused -y
