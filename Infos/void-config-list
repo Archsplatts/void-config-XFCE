@@ -68,7 +68,7 @@ FONT="ter-124b"
 ## Session et démarrage
 
 # Démarrage auto
-ajouter i3
+ajouter spectrwm
 
 # Session actuelle
 désactiver xfwm4 et xfdesktop (type de redémarrage : jamais)
