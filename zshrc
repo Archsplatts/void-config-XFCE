@@ -22,6 +22,7 @@ alias fm="yazi"
 alias ls="eza --icons --group-directories-first"
 alias rm="trash -v"
 alias svl="ls /var/service"
+alias theme="$HOME/.scripts/theme"
 alias zshrc="micro $HOME/.zshrc && source $HOME/.zshrc"
 
 #   FLATPAK
