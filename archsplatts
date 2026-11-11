@@ -128,21 +128,23 @@ mkdir -p "$HOME/.local/share/xfce4/terminal/colorschemes"
 mkdir -p "$HOME/.scripts"
 mkdir -p "$HOME/Documents/Notes"
 mkdir -p "$HOME/Images/Wallpapers"
-cp -r "$HOME/void-config-XFCE/config"/* "$HOME/.config/"
+
 cp -r "$HOME/void-config-XFCE/applications"/* "$HOME/.local/share/applications/"
-cp -r "$HOME/void-config-XFCE/scripts"/* "$HOME/.scripts/"
+cp -r "$HOME/void-config-XFCE/config"/* "$HOME/.config/"
 cp -r "$HOME/void-config-XFCE/Notes"/* "$HOME/Documents/Notes/"
-cp "$HOME/void-config-XFCE/zshrc" "$HOME/.zshrc"
-cp "$HOME/void-config-XFCE/catppuccin-mocha.theme" "$HOME/.local/share/xfce4/terminal/colorschemes/"
-cp "$HOME/void-config-XFCE/sunken-tower.png" "$HOME/Images/Wallpapers/"
-sudo cp "$HOME/void-config-XFCE/018.png" "/usr/share/void-artwork/"
-sudo cp "$HOME/void-config-XFCE/sunken-tower.png" "/usr/share/backgrounds/"
+cp -r "$HOME/void-config-XFCE/scripts"/* "$HOME/.scripts/"
 sudo cp "$HOME/void-config-XFCE/scripts/fstrim" "/etc/cron.weekly/"
 sudo cp "$HOME/void-config-XFCE/scripts/maintenance" "/etc/cron.weekly/"
-chmod u+x "$HOME/.config/rofi/scripts"/*
-chmod u+x "$HOME/.scripts"/*
+sudo cp "$HOME/void-config-XFCE/018.png" "/usr/share/void-artwork/"
+cp "$HOME/void-config-XFCE/catppuccin-mocha.theme" "$HOME/.local/share/xfce4/terminal/colorschemes/"
+cp "$HOME/void-config-XFCE/sunken-tower.png" "$HOME/Images/Wallpapers/"
+sudo cp "$HOME/void-config-XFCE/sunken-tower.png" "/usr/share/backgrounds/"
+cp "$HOME/void-config-XFCE/zshrc" "$HOME/.zshrc"
+
 sudo chmod u+x "/etc/cron.weekly/fstrim"
 sudo chmod u+x "/etc/cron.weekly/maintenance"
+chmod u+x "$HOME/.config/rofi/scripts"/*
+chmod u+x "$HOME/.scripts"/*
 
 echo -e "${JAUNE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${JAUNE}[5/5] Catppuccin papirus folders${NC}"
@@ -152,6 +154,7 @@ git clone https://github.com/catppuccin/papirus-folders.git
 cd papirus-folders
 sudo cp -r src/* /usr/share/icons/Papirus
 papirus-folders -C cat-mocha-teal
+
 rm -rf "$HOME/void-config-XFCE"
 
 echo -e "${VERT}╔════════════════════════════════════════╗${NC}"
