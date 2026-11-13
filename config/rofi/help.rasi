@@ -5,13 +5,13 @@ configuration {
 }
 
 window {
-	background-color:	rgba(30,30,46,0.90);  
-	transparency:		"real";
-	border:           	3px;
-	border-color:		@teal;
-	border-radius:	  	8px;
-	margin: 			0px 0px 0px 8px;	    
-    width:            	32%;        
+	background-color: rgba(30,30,46,0.90);  
+	transparency: "real";
+	border: 3px;
+	border-color: @teal;
+	border-radius: 8px;
+	margin: 0px 0px 0px 8px;	    
+    width: 25%;        
 }
 
 mainbox {
@@ -19,12 +19,12 @@ mainbox {
 }
 
 listview {
-	border: 	0; 
-	columns:  	1;
-    lines:    	18;
- 	padding:  	2px 0px 0px;
-	scrollbar:	false;
-    spacing:  	6px;    
+	border: 0; 
+	columns: 1;
+    lines: 13;
+ 	padding: 2px 0px 0px;
+	scrollbar: false;
+    spacing: 6px;    
 }
 
 inputbar {
@@ -36,14 +36,15 @@ element-text {
 }
 
 element selected normal, element selected active {
-    background-color:	inherit;
-    text-color:         @text;
-  }
+    background-color: inherit;
+    text-color: @text;
+}
 
 element normal normal {
-	background-color:	transparent;
+	background-color: transparent;
 }
+
 element alternate normal {
-    background-color:	transparent;
-    text-color: 		@text;
+    background-color: transparent;
+    text-color: @text;
 }
