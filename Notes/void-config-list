@@ -1,4 +1,6 @@
-[/etc/default/grub]
+# ─── GRUB ───────────────────────────────────────────────────────────────────
+
+sudo micro /etc/default/grub
 
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
@@ -8,22 +10,15 @@ GRUB_BACKGROUND=/usr/share/void-artwork/018.png
 
 sudo update-grub
 
----
+# ─── NTSYNC ─────────────────────────────────────────────────────────────────
 
-[/etc/modules-load.d/]
-
-# ntsync.conf
+sudo micro /etc/modules-load.d/ntsync.conf
 ntsync
 
-# steam limits
-/etc/security/limits.d/26-steam-nofile.conf
+sudo micro /etc/security/limits.d/26-steam-nofile.conf
 *               hard    nofile             524288
 
----
-
-[/etc/sv/]
-
-## LACT
+# ─── LACT ───────────────────────────────────────────────────────────────────
 
 # Créer le service
 sudo mkdir -p /etc/sv/lact
@@ -43,9 +38,7 @@ sudo ln -s /etc/sv/lact /var/service/
 # Vérifier
 sudo sv status /var/service/lact
 
----
-
-[/etc/rc.conf]
+# ─── RC.CONF ────────────────────────────────────────────────────────────────
 
 HOSTNAME="void"
 HARDWARECLOCK="UTC"
@@ -53,17 +46,15 @@ TIMEZONE="Europe/Paris"
 KEYMAP=fr
 FONT="ter-124b"
 
----
-
-[$HOME]
+# ─── THEME ──────────────────────────────────────────────────────────────────
 
 .local/share/fonts --> ubuntumono ubuntu nerd font
 .local/share/icons/ --> Bibata-Modern-Ice
 .local/share/themes --> Catppuccin-Mocha-Teal
 
----
+## Kvantum, qt5ct, qt6ct
 
-[XFCE]
+# ─── XFCE ───────────────────────────────────────────────────────────────────
 
 ## Session et démarrage
 
@@ -76,10 +67,8 @@ désactiver xfwm4 et xfdesktop (type de redémarrage : jamais)
 ## Clavier/Raccourcis d'applications
 Supprimer tous les raccourcis clavier
 
----
+# ─── DNS ────────────────────────────────────────────────────────────────────
 
 ## DNS (Auto adresses uniquement)
 IPv4	9.9.9.9, 149.112.112.112
 IPv6	2620:fe::fe, 2620:fe::9
-
-## Kvantum, qt5ct, qt6ct
