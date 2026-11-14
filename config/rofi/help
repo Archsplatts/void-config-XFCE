@@ -1,0 +1,19 @@
+  Paquets dépôts Void
+Ajouter un programme			add <paquet>
+Désinstaller un programme		del <paquet>
+Rechercher un programme			search <paquet>
+
+  Système
+Update							Windows + U
+Maintenance						Windows + M
+
+  Raccourcis clavier
+Gestionnaire de tâches			Windows + Echap
+Gestionnaire de fichiers		Windows + E
+Powermenu						Windows + P
+Fermer la fenêtre				Windows + Q
+Applications					Windows + D
+Plein écran						Windows + F
+Terminal						Windows + Entrée
+Configuration					Windows + C
+Web browser						Windows + B
