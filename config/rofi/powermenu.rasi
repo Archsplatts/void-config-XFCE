@@ -49,7 +49,6 @@ listview {
 }
 
 mainbox {
-    enabled: true;
     border-color: @selected;
     background-color: transparent;
     children: [ "listview" ];
