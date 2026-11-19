@@ -15,7 +15,7 @@ configuration {
 	drun-display-format: "{name}";
     font: "UbuntuNerd Font 13";
  	icon-theme: "Papirus-Dark";
-	modi: "drun,run";
+	modes: "drun,run";
 	scroll-method: 0;  
 	show-icons: true;
 	sidebar-mode: false;
