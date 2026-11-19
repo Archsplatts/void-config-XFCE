@@ -1,7 +1,7 @@
 @import "themes/catppuccin-default"
 
 configuration {
-    modi: "drun";
+    modes: "drun";
     show-icons: true;
     sort: true;
     levenshtein-sort: false;
