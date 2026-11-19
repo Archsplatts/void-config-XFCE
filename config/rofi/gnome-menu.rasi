@@ -4,7 +4,6 @@ configuration {
     modes: "drun";
     show-icons: true;
     sort: true;
-    levenshtein-sort: false;
     disable-history: true;
     sorting-method: "fzf";
     display-drun: "";
