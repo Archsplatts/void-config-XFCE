@@ -54,7 +54,6 @@ listview {
 
 mainbox {
     spacing: 14px;
-    margin: 0px;
     padding: 14px;
     border-radius: 0px;
     border-color: @selected;
@@ -63,7 +62,7 @@ mainbox {
 }
 
 window {
-	modi: "drun";
+	modes: "drun";
 	show-icons: true;
 	border:	3px;
 	border-color: @teal;
