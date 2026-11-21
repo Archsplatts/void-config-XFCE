@@ -9,8 +9,8 @@ configuration {
 
 element {
 	background-color: inherit;
-	padding: 10;
-	spacing: 10;
+	padding: 10px;
+	spacing: 10px;
 	text-color: @text;
 }
 
@@ -73,6 +73,6 @@ window {
 	background-color: rgba(30,30,46,0.90);
 	transparency: "real";
 	border-radius: 8px;
-    padding: 14;
+    padding: 14px;
     width: 20%; 
 }   
