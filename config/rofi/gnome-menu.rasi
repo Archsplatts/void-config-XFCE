@@ -128,8 +128,6 @@ textbox-prompt-colon {
 
 window {
     transparency: "real";
-    location: center;
-    anchor: center;
     fullscreen: true;
     border: 0px solid;
     background-color: rgba(30,30,46,0.80);
